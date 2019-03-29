@@ -9,14 +9,12 @@ class MyApp extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: const Text('Flutter TextView example')),
         body: Column(children: [
-          Center(
+          Expanded(
+              flex: 1,
               child: Container(
-                  padding: EdgeInsets.symmetric(vertical: 30.0),
-                  width: 130.0,
-                  height: 100.0,
                   child: Sceneform())),
           Expanded(
-              flex: 3,
+              flex: 1,
               child: Container(
                   color: Colors.blue[100],
                   child: Center(child: Text("Hello from Flutter!"))))
